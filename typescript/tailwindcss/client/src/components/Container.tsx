@@ -1,5 +1,5 @@
 import {ReactNode} from 'react';
-import tw from '@/utilities/tailwindcss'
+import tw from '@/utilities/tailwindcss';
 
 interface Container {
     className?: string;

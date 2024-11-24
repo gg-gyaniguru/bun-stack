@@ -1,8 +1,6 @@
 import './global.css';
 import {JetBrains_Mono} from 'next/font/google';
-import tw from '@/utilities/tailwindcss';
-import Query from '@/providers/Query';
-import Store from "@/providers/Store";
+import tw from '@/utilities/tailwindcss'
 import {Toaster} from 'sonner';
 
 const jetBrainsMono = JetBrains_Mono({
@@ -20,12 +18,8 @@ const Layout = ({children}) => {
     return (
         <html lang={'en'}>
             <body className={tw(jetBrainsMono.className, 'text-white bg-neutral-950')}>
-                <Query>
-                    <Store>
-                        <Toaster position={'top-right'} expand={true} richColors={true} duration={1500} gap={16}/>
-                        {children}
-                    </Store>
-                </Query>
+                <Toaster position={'top-right'} expand={true} richColors={true} duration={1500} gap={16}/>
+                {children}
             </body>
         </html>
     );

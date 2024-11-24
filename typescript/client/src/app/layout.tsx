@@ -1,5 +1,6 @@
 import './global.css';
 import {JetBrains_Mono} from 'next/font/google';
+import tw from '@/utilities/tailwindcss';
 import type {Metadata} from 'next';
 import React, {ReactNode} from 'react';
 import Query from "@/providers/Query";
@@ -24,7 +25,7 @@ interface Layout {
 const Layout = ({children}: Layout) => {
     return (
         <html lang={'en'}>
-            <body className={`${jetBrainsMono.className} text-white bg-neutral-950`}>
+            <body className={tw(jetBrainsMono.className, 'text-white bg-neutral-950')}>
                 <Query>
                     <Store>
                         <Toaster position={'top-right'} expand={true} richColors={true} duration={1500} gap={16}/>
