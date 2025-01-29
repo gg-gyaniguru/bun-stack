@@ -16,7 +16,7 @@ const metadata: Metadata = {
     description: 'bun-stack',
 };
 
-interface Layout {
+type Layout = {
     children: ReactNode;
 }
 

@@ -1,7 +1,7 @@
 import {ReactNode} from 'react';
 import tw from '@/utilities/tailwindcss'
 
-interface Container {
+type Container = {
     className?: string;
     children: ReactNode
 }

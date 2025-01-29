@@ -4,7 +4,7 @@ import {ReactNode, useRef} from 'react';
 import {Provider} from "react-redux";
 import createStore, {Store as Create} from "@/store";
 
-interface Store {
+type Store = {
     children: ReactNode
 }
 
