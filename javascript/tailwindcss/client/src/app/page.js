@@ -1,10 +1,9 @@
 import Container from '@/components/Container';
 
-
 const Page = () => {
     return (
         <Container>
-            <div className={''}></div>
+            <div className={''}>client</div>
         </Container>
     );
 };
