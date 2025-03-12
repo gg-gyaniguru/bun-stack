@@ -9,8 +9,10 @@ const createStore = () => {
     });
 };
 
-export interface Store extends ReturnType<typeof createStore> {}
-export interface State extends ReturnType<Store['getState']> {}
-// interface Dispatch extends ReturnType<Store['dispatch']> {}
+type Store = ReturnType<typeof createStore>;
+type State = ReturnType<Store['getState']>;
+type Dispatch = ReturnType<Store['dispatch']>;
+
+export type {Store, State, Dispatch};
 
 export default createStore;
