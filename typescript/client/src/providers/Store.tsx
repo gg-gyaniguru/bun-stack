@@ -17,9 +17,11 @@ const Store = ({children}: Store) => {
     }
 
     return (
-        <Provider store={store.current}>
-            {children}
-        </Provider>
+        <>
+            <Provider store={store.current}>
+                {children}
+            </Provider>
+        </>
     );
 };
 

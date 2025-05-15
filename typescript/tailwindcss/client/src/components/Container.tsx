@@ -8,9 +8,11 @@ type Container = {
 
 const Container = ({className, children}: Container) => {
     return (
-        <div className={tw('w-[90%] m-auto', className)}>
-            {children}
-        </div>
+        <>
+            <div className={tw('w-[90%] m-auto', className)}>
+                {children}
+            </div>
+        </>
     );
 };
 

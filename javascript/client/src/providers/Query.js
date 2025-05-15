@@ -8,9 +8,11 @@ const Query = ({children}) => {
     const [query] = useState(() => new QueryClient());
 
     return (
-        <Provider client={query}>
-            {children}
-        </Provider>
+        <>
+            <Provider client={query}>
+                {children}
+            </Provider>
+        </>
     );
 };
 

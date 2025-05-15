@@ -13,9 +13,11 @@ const Store = ({children}) => {
     }
 
     return (
-        <Provider store={store.current}>
-            {children}
-        </Provider>
+        <>
+            <Provider store={store.current}>
+                {children}
+            </Provider>
+        </>
     );
 };
 

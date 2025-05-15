@@ -3,11 +3,13 @@ import tw from '@/utilities/tailwindcss'
 
 const Page = () => {
     return (
-        <Container>
-            <div className={tw('mt-6 text-center')}>
-                client
-            </div>
-        </Container>
+        <>
+            <Container>
+                <div className={tw('mt-6 text-center')}>
+                    client
+                </div>
+            </Container>
+        </>
     );
 };
 
